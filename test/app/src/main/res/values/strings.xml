@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">goTennaProject</string>
+    <string name="accessToken">
+        pk.eyJ1IjoibXJnZHMyIiwiYSI6ImNqdzU0djl3azB2am00MW93NmJpdGZtYnIifQ.fGoJpCd0ZLtY4eKTxbJgiQ
+    </string>
+
+
+    <!--Get URL chat_log.php-->
+    <string name="GET_map_pins_js">https://annetog.gotenna.com/development/scripts/</string>
+    <string name="GET_map_pins_js_test">http://webpage.pace.edu/gs78016p/</string>
+
+
+  <!--ViewHolder item data-->
+    <string name="holder_name">name</string>
+    <string name="holder_description">des</string>
+    <string name="user_location_permission_explanation">Show your current location?</string>
+    <string name="user_location_permission_not_granted">User location not granted</string>
+    <string name="holder_lat">latitude:</string>
+    <string name="holder_lng">longitiude</string>
+
+
+    <string name="description">Description:\n </string>
+    <string name="name"> Name:\n</string>
+    <string name="activity_main_title">goTenna</string>
+    <string name="map_button">View Map</string>
+    <string name="list_button">Position List</string>
+
+     <!--activity names-->
+    <string name="title_activity_pin_data_list">PinDataList</string>
+
+    <string name="title_activity_map">MapBox</string>
+</resources>
+
+
+

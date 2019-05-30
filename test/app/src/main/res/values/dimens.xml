@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="button_text_size_main">16sp</dimen>
+    <dimen name="word_text_size">25sp</dimen>
+
+    <!--Margin Button Login-->
+    <dimen name="activity_left_margin">26dp</dimen>
+    <dimen name="activity_right_margin">26dp</dimen>
+    <dimen name="activity_button_padding">26dp</dimen>
+
+    <!-- Marging Login Background-->
+    <dimen name="login_marginStart">0dp</dimen>
+    <dimen name="login_marginLeft">8dp</dimen>
+    <dimen name="login_marginRight">8dp</dimen>
+    <dimen name="login_marginBottom">180dp</dimen>
+    <dimen name="login_marginTop">16dp</dimen>
+
+    <!--Margin Button main-->
+    <dimen name="activity_button_padding_main">24dp</dimen>
+    <dimen name="activity_left_margin_main">30dp</dimen>
+    <dimen name="activity_right_margin_main">30dp</dimen>
+    <dimen name="activity_button_height">55dp</dimen>
+    <dimen name="activity_button_margin_top">214dp</dimen>
+    <dimen name="activity_button_margin_bottom">213dp</dimen>
+    <!--Size icon Button main-->
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_padding_left">22dp</dimen>
+    <dimen name="icon_padding_right">16dp</dimen>
+
+
+
+    <!--Margin Animation -->
+    <dimen name="animation_left_margin_main">23dp</dimen>
+    <dimen name="animation_right_margin_main">22dp</dimen>
+    <dimen name="animation_top_margin_main">100dp</dimen>
+    <dimen name="animation_bottom_margin_main">30dp</dimen>
+
+    <!--Chat item-->
+    <dimen name="profile_pic_size">50dp</dimen>
+    <dimen name="profile_pic_marginLeft">8dp</dimen>
+
+
+    <dimen name="profile_name_textSize">12sp</dimen>
+    <dimen name="profile_name_marginLeft">4dp</dimen>
+    <dimen name="chat_bubble_max_width">200dp</dimen>
+    <dimen name="chat_bubble_padding">20dp</dimen>
+    <dimen name="chat_time_textSize">10sp</dimen>
+
+
+    <!---->
+
+
+    <dimen name="fab_margin">16dp</dimen>
+
+
+
+</resources>

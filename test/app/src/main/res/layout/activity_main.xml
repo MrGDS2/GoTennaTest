@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/button_blue"
+                tools:context=".MainActivity">
+
+
+    <!--<LinearLayout-->n
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+
+
+
+
+
+    <!--</LinearLayout>-->
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_marginBottom"
+                android:src="@drawable/main_img" />
+
+        <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_left_margin_main"
+                android:layout_marginRight="@dimen/activity_right_margin_main"
+                android:onClick="onMapClicked"
+                android:background="@drawable/ripple"
+                android:text="@string/map_button"
+                android:textSize="@dimen/button_text_size_main"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@drawable/ic_chat_main"
+                android:paddingRight="@dimen/icon_padding_right"
+                android:paddingLeft="@dimen/icon_padding_left"
+                android:drawablePadding="@dimen/icon_padding_right"
+                android:layout_marginBottom="@dimen/button_text_size_main"
+        />
+
+        <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_left_margin_main"
+                android:layout_marginRight="@dimen/activity_right_margin_main"
+                android:drawablePadding="@dimen/icon_padding_right"
+                android:onClick="onListClicked"
+                android:background="@drawable/ripple"
+                android:text="@string/list_button"
+                android:textSize="@dimen/button_text_size_main"
+                android:textColor="@color/chat_text"
+                android:gravity="left|center_vertical"
+
+                android:drawableLeft="@drawable/ic_lock_main"
+                android:paddingRight="@dimen/icon_padding_right"
+                android:paddingLeft="@dimen/icon_padding_left"
+                android:layout_marginBottom="@dimen/button_text_size_main"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
