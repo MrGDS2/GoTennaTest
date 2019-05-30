@@ -40,10 +40,10 @@
 
 
         <TextView
-                android:id="@+id/pin_lat"
+                android:id="@+id/pin_lat_lng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/holder_lat"
+                android:text="@string/holder_lat_lng"
                 android:textColor="@android:color/white"
                 android:layout_gravity="left"
                 android:textStyle="bold"
@@ -51,17 +51,7 @@
                 android:layout_marginTop="5dp"
         />
 
-        <TextView
-                android:id="@+id/pin_lng"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/holder_lng"
-                android:textColor="@android:color/white"
-                android:layout_gravity="left"
-                android:textStyle="bold"
-                android:textSize="24sp"
-                android:layout_marginTop="5dp"
-        />
+
 
         <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/list_usrpic"

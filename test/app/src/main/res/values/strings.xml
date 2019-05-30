@@ -29,6 +29,7 @@
     <string name="title_activity_pin_data_list">PinDataList</string>
 
     <string name="title_activity_map">MapBox</string>
+    <string name="holder_lat_lng">lat/lng:</string>
 </resources>
 
 

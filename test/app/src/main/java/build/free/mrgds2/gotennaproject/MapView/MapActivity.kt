@@ -8,6 +8,7 @@ import android.location.Location
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AlertDialog
 import android.util.Log
 import android.widget.Toast
 import build.free.mrgds2.gotennaproject.PinDataHolder.PinDataListActivity
@@ -119,14 +120,6 @@ class MapActivity : AppCompatActivity(),OnMapReadyCallback, PermissionsListener 
                         pinDataModel.lng.toString())// inserts data into the phones local memory db//push to phone db
 
 
-//                   val editor = savepref.edit()
-//                    editor.putString("name", pinDataModel.name)
-//                    editor.putString("description", pinDataModel.des)
-//                    editor.putLong("latitude", pinDataModel.lat.toLong())
-//                    editor.putLong("longitude", pinDataModel.lng.toLong())
-//                    editor.putBoolean("save", true);                          //stores username and password on device when checked
-//                    editor.apply();
-
                     placeMakers(
                         pinDataModel.name,
                         pinDataModel.des,
@@ -135,39 +128,11 @@ class MapActivity : AppCompatActivity(),OnMapReadyCallback, PermissionsListener 
                 }
 
 
-
-//save array to pass
-//                val i = Intent(this@MapActivity, PinDataListActivity::class.java)
-//
-//
-//
-//                val testing = ArrayList<String>()
-//
-//                i.putParcelableArrayListExtra("extraextra", testing)
-//                startActivity(i)
             }
 
             override fun onFailure(call: Call<List<PinDataModel>>, t: Throwable) {
                 Toast.makeText(this@MapActivity, "failed=>" + t.message, Toast.LENGTH_LONG).show()
                 Log.e("ERROR:=>", t.message)
-
-//                val cursor = mdbHelper.allPin
-//
-//            if (cursor.getCount() == 0)
-//                Toast.makeText(this@MapActivity, "nothing in database", Toast.LENGTH_LONG).show()
-//            if (cursor.moveToFirst()) {
-//                do {
-//                    placeMakers(
-//                        cursor.getString(1),
-//                        cursor.getString(2),
-//                        41.127590,-73.807441)
-//                } while (cursor.moveToNext())
-//            }
-//
-//            cursor.close()//release resources
-
-
-
 
             }
         })
@@ -175,8 +140,8 @@ class MapActivity : AppCompatActivity(),OnMapReadyCallback, PermissionsListener 
         location_fab.setOnClickListener { view ->
             //set camera to user location
             val lastLocation=mapboxMap.locationComponent.lastKnownLocation
-            originLocation=lastLocation//it's not going to be!!*message to complier(!!)
-            // setCameraPosition(originLocation)
+           // originLocation=lastLocation//it's not going to be!!*message to complier(!!)
+            setCameraPosition(lastLocation)
 
         }
 
@@ -282,8 +247,8 @@ class MapActivity : AppCompatActivity(),OnMapReadyCallback, PermissionsListener 
     }
 
 
-    private fun setCameraPosition(location: Location){
-        mapboxMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(location.latitude,location.longitude),13.0))
+    private fun setCameraPosition(location: Location?){
+        mapboxMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(location!!.latitude,location.longitude),13.0))
     }
 
 
@@ -297,10 +262,15 @@ class MapActivity : AppCompatActivity(),OnMapReadyCallback, PermissionsListener 
 
     }
 
-    fun start(context : Context){
-       val starter = Intent(context, MapActivity::class.java);
-        context.startActivity(starter);
-   }
+    fun showMessage(title: String, message: String) {
+
+        val alert = AlertDialog.Builder(this@MapActivity)
+        alert.setCancelable(true)
+        alert.setTitle(title)
+        alert.setMessage(message)
+        alert.show()
+
+    }
 
     public override fun onStart() {
         super.onStart()

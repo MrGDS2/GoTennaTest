@@ -29,10 +29,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/login_marginBottom"
-                android:src="@drawable/main_img" />
+
 
         <android.support.v7.widget.AppCompatButton
                 android:layout_width="match_parent"

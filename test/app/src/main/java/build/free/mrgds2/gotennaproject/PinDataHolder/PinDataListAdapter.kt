@@ -58,7 +58,7 @@ class PinDataListAdapter : RecyclerView.Adapter<PinDataListAdapter.PinDataViewho
        val pinDatamodel : PinDataModel= pdList.get(position)
 
          holder.itemView.pin_name.setText(pinDatamodel.name)
-         //holder.itemView.pin_des.setText("poopi")
+
     }
     override fun getItemCount(): Int {
         return pdList.size

@@ -58,7 +58,7 @@ public class PinListAdapter  extends RecyclerView.Adapter<PinListAdapter.PinView
                 pinViewHolder.tvName.setText(cursor.getString(1)); // get the data into viewholder
                 pinViewHolder.tvDescription.setText(cursor.getString(2));
                 pinViewHolder.tvLat.setText(cursor.getString(3));
-               //pinViewHolder.tvLng.setText( cursor.getString(4));
+
             }
             while (cursor.moveToNext());
         }
@@ -83,8 +83,8 @@ public class PinListAdapter  extends RecyclerView.Adapter<PinListAdapter.PinView
         super(itemView);
         tvName= (TextView) itemView.findViewById(R.id.pin_name);
         tvDescription = (TextView) itemView.findViewById(R.id.pin_des);
-        tvLat = (TextView) itemView.findViewById(R.id.pin_lat);
-        tvLng = (TextView) itemView.findViewById(R.id.pin_lng);
+        tvLat = (TextView) itemView.findViewById(R.id.pin_lat_lng);
+
 
     }
 

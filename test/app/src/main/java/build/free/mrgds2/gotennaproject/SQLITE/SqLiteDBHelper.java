@@ -47,9 +47,8 @@ public class SqLiteDBHelper extends SQLiteOpenHelper {
         //insert values into table for-each column(s)
         contentValues.put(PLACE_COLUMN_NAME, name);
         contentValues.put(PLACE_COLUMN_DESCRIPTION, des);
-        contentValues.put(PLACE_COLUMN_LAT, lat);
-//        contentValues.put(PLACE_COLUMN_LAT,"Lat/Lng:\n"+
-//                lat+ "\n"+ lng);
+        contentValues.put(PLACE_COLUMN_LAT,"Lat/Lng:\n"+
+                lat+ "\n"+ lng);
 
 
        long result= db.insert(PLACE_TABLE_NAME, null, contentValues);
